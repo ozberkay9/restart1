@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Handjet', cursive;
+}
+body {
+    background-image: url(./img/bg.jpg);
+    background-size: cover;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* header start*/
+
+header {
+    height: 100px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.06) ;
+}
+header nav {
+height: 100px;
+text-decoration: naone;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+header nav .logo a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 30px;
+}
+.menu ul {
+    display: flex;
+    text-decoration: none;
+    column-gap: 30px;
+    list-style: none;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: color .25s ease;
+}
+.menu ul li a:hover {
+    color: #0ba2c0
+}
+nav .newlink {
+    text-decoration: none;
+    color: #0ba2c0;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 12px 24px;
+    border-radius: 25px;
+    transition: all .25s ease;
+}
+nav .newlink:hover {
+    background-color: #0ba2c0;
+    color: whitesmoke;
+}
+nav .menu {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+/* header end*/
+
+/* responsive start*/
+
+@media(max-width:600px){
+    .container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+
+    }
+}
+
+/*responsive end*/
+
+section .text {
+    color: whitesmoke;
+    height: 100px;
+}
+section .title {
+    text-align: center;
+    height: 100px;
+    font-size: 75px;
+    font-weight: bolder;
+}
+section {
+    padding-top: 150px;
+}
+section .explain {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bolder;
+}
+section .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    column-gap: 46px;
+}
+section .links .learn-more {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    font-weight: bolder;
+    background-color: whitesmoke;
+    padding: 12px 48px;
+    border-radius: 30px;
+    transition: all 0.50s ease;
+
+}
+section .links .learn-more:hover {
+    color: whitesmoke;
+    background-color: #0ba2c0;
+}
+section .links .social-media {
+    text-decoration: none;
+    font-size: 30px;
+    background-color: whitesmoke;
+    font-weight: bolder;
+    color: black;
+    padding: 12px 48px;
+    border-radius: 30px;
+    transition: all 0.50s ease;
+}
+section .links .social-media:hover {
+    color: whitesmoke;
+    background-color: #0ba2c0;
+}
